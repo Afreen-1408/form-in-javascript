@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Form Document</title>
+  <style>
+     body {
+      background-image: url("pic.jpg");
+
+
+    } 
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+
+    function callvalue() {
+
+      var name = document.getElementById('name').value;
+      var date = document.getElementById('date').value;
+      var number = document.getElementById('mob').value;
+      var address = document.getElementById('addr').value;
+      document.writeln("Your Info: " + "<br>" + "Name:" + name + "<br>");
+      document.writeln("Date:  " + date + "<br>");
+      document.writeln("Mobile no : " + number + "<br>");
+      document.writeln("Address : " + address + "<br>");
+
+    }
+  </script>
+</head>
+<body>
+
+  <h1 style="color:brown;text-align:center;"> My Regitration Form </h1>
+  <form style="color:black;text-align:center;" onsubmit="callvalue()">
+    <b> USERNAME :</b> <input type="text" placeholder="username" id="name" class="input"><br>
+    <b> DATE :</b> <input type="date" placeholder="date" id="date" class="input"><br>
+    <b> MOBILE NO : </b> <input type="number" placeholder="mobile no" id="mob" class="input"><br>
+    <b> ADDRESS :</b> <input type="address" placeholder="address" id="addr" class="input"><br>
+
+    <input type="Submit" value="Submit" id="btn">
+
+
+  </form>
+</body>
+
+</html>
